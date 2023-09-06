@@ -2,7 +2,7 @@ package de.wolffclan;
 
 import java.util.Optional;
 
-import static de.wolffclan.DaysOfWeek.pruefeWochentag;
+import static de.wolffclan.DaysOfWeek.checkDayOfWeek;
 import static de.wolffclan.PersonRepository.*;
 
 public class Main {
@@ -33,6 +33,8 @@ public class Main {
         // Optional Name
         showOptionalPersonByName("Klaus-Bärbel");
         showOptionalPersonByName("Hans-Jürgen");// Not available
+        // Return List by DaysOfWeek
+        System.out.println(personListByWeekday(DaysOfWeek.SATURDAY));
     }
 
 
@@ -41,9 +43,9 @@ public class Main {
         Optional<Person> optionalPerson = getPersonById(id);
         if (optionalPerson.isPresent()) {
             Person person = optionalPerson.get();
-            System.out.println(person.name() + " hat den Lieblingstag am " + pruefeWochentag(person.favoriteDay()));
+            System.out.println(person.name() + " hat den Lieblingstag am " + checkDayOfWeek(person.favoriteDay()));
         } else {
-            System.out.println("Person is not available");
+            System.out.println("No entry found on id: " + id + "...");
         }
     }
 
@@ -54,7 +56,7 @@ public class Main {
             Person p = optionalPerson.get();
             System.out.println("Id: " + p.id() + "\nName: " + p.name() + "\nSpezial Day: " + p.favoriteDay() + "\nGender: " + p.gender());
         } else {
-            System.out.println("No entry found...");
+            System.out.println("No entry found on name: " + name + "...\n");
         }
     }
 }

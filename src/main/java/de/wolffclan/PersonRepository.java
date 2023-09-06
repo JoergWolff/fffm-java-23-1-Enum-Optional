@@ -3,7 +3,7 @@ package de.wolffclan;
 import java.util.*;
 
 public class PersonRepository {
-    public static final List<Person> personList = new ArrayList<>();
+    private static final List<Person> personList = new ArrayList<>();
 
     public void addPerson(Person person){
         personList.add(person);
@@ -61,6 +61,16 @@ public class PersonRepository {
             }
         }
         return genderMap;
+    }
+
+    public static List<Person> personListByWeekday(DaysOfWeek daysOfWeek) {
+        List<Person> listPerson = new ArrayList<>();
+        for (Person person : personList) {
+            if (person.favoriteDay() == daysOfWeek) {
+                listPerson.add(person);
+            }
+        }
+        return listPerson;
     }
 }
 

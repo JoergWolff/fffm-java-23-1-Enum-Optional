@@ -9,24 +9,15 @@ public enum DaysOfWeek {
     SATURDAY,
     SUNDAY;
 
-    public static String pruefeWochentag(DaysOfWeek day) {
-        switch (day) {
-            case MONDAY:
-                return "Montag";
-            case TUESDAY:
-                return "Dienstag";
-            case WEDNESDAY:
-                return "Mittwoch";
-            case THURSDAY:
-                return "Donnerstag";
-            case FRIDAY:
-                return "Freitag";
-            case SATURDAY:
-            case SUNDAY:
-                return "Wochenende";
-            default:
-                return "";
-        }
+    public static String checkDayOfWeek(DaysOfWeek day) {
+        return switch (day) {
+            case MONDAY -> "Montag";
+            case TUESDAY -> "Dienstag";
+            case WEDNESDAY -> "Mittwoch";
+            case THURSDAY -> "Donnerstag";
+            case FRIDAY -> "Freitag";
+            case SATURDAY, SUNDAY -> "Wochenende";
+        };
     }
 }
 

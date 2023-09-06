@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5868b4ab-1f76-4c49-ae2b-cf8e3136047a" name="Changes" comment="changes for Enum Gender counting">
+    <list default="true" id="5868b4ab-1f76-4c49-ae2b-cf8e3136047a" name="Changes" comment="add showOptionalPersonByName">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/wolffclan/DaysOfWeek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wolffclan/DaysOfWeek.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/wolffclan/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wolffclan/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/wolffclan/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wolffclan/PersonRepository.java" afterDir="false" />
     </list>
@@ -59,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1694005285223</updated>
-      <workItem from="1694005286193" duration="11443000" />
+      <workItem from="1694005286193" duration="13649000" />
     </task>
     <task id="LOCAL-00001" summary="ToDo's">
       <option name="closed" value="true" />
@@ -93,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694013483357</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add showOptionalPersonByName">
+      <option name="closed" value="true" />
+      <created>1694017442189</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694017442189</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +113,7 @@
     <MESSAGE value="changes on README" />
     <MESSAGE value="changes for Enum Gender" />
     <MESSAGE value="changes for Enum Gender counting" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes for Enum Gender counting" />
+    <MESSAGE value="add showOptionalPersonByName" />
+    <option name="LAST_COMMIT_MESSAGE" value="add showOptionalPersonByName" />
   </component>
 </project>
