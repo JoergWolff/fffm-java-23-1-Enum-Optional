@@ -11,9 +11,15 @@ public class Main {
         System.out.println("-------------------");
 
         PersonRepository personRepository = new PersonRepository();
-        Person person1 = new Person(1, "Franz", DaysOfWeek.FRIDAY);
+        Person person1 = new Person(1, "Franz", DaysOfWeek.MONDAY, Gender.MALE);
+        Person person2 = new Person(3, "Heidi", DaysOfWeek.FRIDAY, Gender.FEMALE);
+        Person person3 = new Person(4, "Klaus-Bärbel", DaysOfWeek.SATURDAY, Gender.DIVERS);
+        Person person4 = new Person(5, "Hugo", DaysOfWeek.SATURDAY, Gender.MALE);
         System.out.println(person1);
         personRepository.addPerson(person1);
+        personRepository.addPerson(person2);
+        personRepository.addPerson(person3);
+        personRepository.addPerson(person4);
         // person with id 2 is not available
         System.out.println(personRepository.getPersonById(2));
 
@@ -21,6 +27,10 @@ public class Main {
         giveFeedback(optionalPerson1);
         Optional<Person> optionalPerson2 = personRepository.getPersonById(2);
         giveFeedback(optionalPerson2);
+
+        // Gender
+        System.out.println("Gender");
+        System.out.println(personRepository.showGender());
     }
 
     private static void giveFeedback(Optional<Person> optionalPerson){
