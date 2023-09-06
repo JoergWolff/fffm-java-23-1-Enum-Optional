@@ -3,6 +3,8 @@ package de.wolffclan;
 import java.util.Optional;
 
 import static de.wolffclan.DaysOfWeek.pruefeWochentag;
+import static de.wolffclan.PersonRepository.getPersonById;
+import static de.wolffclan.PersonRepository.showGender;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,16 +23,16 @@ public class Main {
         personRepository.addPerson(person3);
         personRepository.addPerson(person4);
         // person with id 2 is not available
-        System.out.println(personRepository.getPersonById(2));
+        System.out.println(getPersonById(2));
 
-        Optional<Person> optionalPerson1 = personRepository.getPersonById(1);
+        Optional<Person> optionalPerson1 = getPersonById(1);
         giveFeedback(optionalPerson1);
-        Optional<Person> optionalPerson2 = personRepository.getPersonById(2);
+        Optional<Person> optionalPerson2 = getPersonById(2);
         giveFeedback(optionalPerson2);
 
         // Gender
         System.out.println("Gender");
-        System.out.println(personRepository.showGender());
+        System.out.println(showGender());
     }
 
     private static void giveFeedback(Optional<Person> optionalPerson){

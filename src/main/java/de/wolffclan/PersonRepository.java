@@ -8,7 +8,7 @@ public class PersonRepository {
     public void addPerson(Person person){
         personList.add(person);
     }
-    public Optional<Person> getPersonById(int id) {
+    public static Optional<Person> getPersonById(int id) {
         for (Person person : personList) {
             if (person.id() == id) {
                 return Optional.of(person);
@@ -16,6 +16,7 @@ public class PersonRepository {
         }
         return Optional.empty();
     }
+
 
     public static Map<Gender, Integer> showGender() {
         Map<Gender, Integer> genderMap = new HashMap<>();
