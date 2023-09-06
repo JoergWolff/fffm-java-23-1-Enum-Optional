@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5868b4ab-1f76-4c49-ae2b-cf8e3136047a" name="Changes" comment="changes for Enum Gender">
+    <list default="true" id="5868b4ab-1f76-4c49-ae2b-cf8e3136047a" name="Changes" comment="changes for Enum Gender counting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/wolffclan/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wolffclan/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/wolffclan/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/wolffclan/PersonRepository.java" afterDir="false" />
@@ -59,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1694005285223</updated>
-      <workItem from="1694005286193" duration="7918000" />
+      <workItem from="1694005286193" duration="11443000" />
     </task>
     <task id="LOCAL-00001" summary="ToDo's">
       <option name="closed" value="true" />
@@ -85,7 +85,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694012312304</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changes for Enum Gender counting">
+      <option name="closed" value="true" />
+      <created>1694013483357</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694013483357</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +103,7 @@
     <MESSAGE value="ToDo's" />
     <MESSAGE value="changes on README" />
     <MESSAGE value="changes for Enum Gender" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes for Enum Gender" />
+    <MESSAGE value="changes for Enum Gender counting" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes for Enum Gender counting" />
   </component>
 </project>

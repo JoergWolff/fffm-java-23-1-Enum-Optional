@@ -17,6 +17,15 @@ public class PersonRepository {
         return Optional.empty();
     }
 
+    public static Optional<Person> getPersonByName(String name){
+
+        for(Person person :personList){
+            if (person.name().equals(name)){
+               return Optional.of(person);
+            }
+        }
+        return Optional.empty();
+    }
 
     public static Map<Gender, Integer> showGender() {
         Map<Gender, Integer> genderMap = new HashMap<>();
